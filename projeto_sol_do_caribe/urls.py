@@ -20,11 +20,11 @@ from core.views import index, agendamento, contato, termos_e_servicos, politica_
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
-    path('', produtos),
-    path('', agendamento),
-    path('', contato),
-    path('', termos_e_servicos),
-    path('', politica_de_privacidade),
+    path('produtos/', produtos),
+    path('produtos/', agendamento),
+    path('produtos/', contato),
+    path('produtos/', termos_e_servicos),
+    path('produtos/', politica_de_privacidade),
 
 
 ]
