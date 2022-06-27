@@ -14,7 +14,7 @@ def contato(request):
  return render(request, 'contato.html')
 
 def agendamento(request):
-return render(request, 'agendamento.html')
+ return render(request, 'agendamento.html')
 
 def produtos(request):
  return render(request, 'produtos.html')
