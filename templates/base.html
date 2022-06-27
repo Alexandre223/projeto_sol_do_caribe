@@ -19,80 +19,14 @@
   </head>
 
   <body>
-    <header class="cabecalho">
-      <section>
-        <div class="cabecalho_logo">
-          <img src="./src/assets/Banner.jpg" alt="logo Sol do Caribe" />
-          <img src="./src/assets/Nome do banner.png" alt="nome da logo" />
-        </div>
-      </section>
-      <div>
-        <ul class="cabecalho_menu">
-          <li><a>Home</a></li>
-          <li><a>produtos</a></li>
-          <li><a>Contato</a></li>
-          <li><a>politica de privacidade</a></li>
-          <li><a>termos e servicos</a></li>
-        </ul>
-      </div>
-    </header>
+    
 
-    {% block index %} {% endblock %}
-    {% block agendamento %} {% endblock %}
 
-    <!-- RODAPÉ -->
-    <footer class="rodape">
-      <!-- SEÇÃO CARRINHO -->
-      <section class="carrinho">
-        <!-- CABEÇALHO INFORMAÇÕES DO USUÁRIO -->
-        <header class="infoResumo">
-          <div class="container">
-            <!-- INFORMAÇÕES DO USUÁRIO -->
-            <div class="infoUsuario">
-              <h3>Olá Sol do Caribe | Minha sacola</h3>
-              <p>Retirar no balcão</p>
-            </div>
+    {% include 'cabecalho.html' %}
 
-            <!-- INFORMAÇÕES DE PREÇO TOTAL -->
-            <p class="infoPreco">Total: R$ 32.90</p>
-          </div>
-        </header>
+    {% block conteudo %}
+    {% endblock %}
 
-        <div class="container">
-          <!-- LISTA/RESUMO DE PRODUTOS -->
-          <div class="resumoPedido">
-            <ul class="listaProdutos">
-              <li class="cardProduto">
-                <!--  NOME/FOTO PRODUTO  -->
-                <div class="infoNome">
-                  <img
-                    src="./src/assets/Parafina Ativadora coco e Cenoura.jpg"
-                    alt="Parafina Ativadora coco e Cenoura"
-                  />
-                  <p>Parafina Ativadora coco e Cenoura</p>
-                </div>
-
-                <!-- PREÇO PRODUTO -->
-                <div class="infoPreco">
-                  <p>R$95,00</p>
-                  <button>
-                    <img
-                      src="./src/assets/lixo.png"
-                      alt="Lixo para remover produto"
-                    />
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- BOTẼOS PARA FINALZIAR/CANCELAR O PEDIDO -->
-          <div class="btnFinalizaPedido">
-            <button type="button">Finalizar Pedido</button>
-            <button type="button">Cancelar Pedido</button>
-          </div>
-        </div>
-      </section>
-    </footer>
+    {% include 'ropdape.html' %}
   </body>
 </html>
