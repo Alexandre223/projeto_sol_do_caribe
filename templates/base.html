@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -13,20 +14,28 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/reset.css' %}"
+    />
     <link rel="stylesheet" href="static/css/style.css" />
     <title>Sol do caribe</title>
   </head>
 
   <body>
+    {% include 'agendamento.html' %}
     
-
-
     {% include 'cabecalho.html' %}
 
-    {% block conteudo %}
-    {% endblock %}
+    {% include 'contato.html' %}
 
-    {% include 'rodape.html' %}
+    {% include 'index.html' %}
+
+    {% include 'politica_de_privacidade.html' %}
+
+    {% include 'produtos.html' %}
+    
+    {% include'rodape.html' %}
   </body>
 </html>

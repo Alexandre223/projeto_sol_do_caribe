@@ -1,54 +1,51 @@
-    <!-- RODAPÉ -->
-    <footer class="rodape">
-        <!-- SEÇÃO CARRINHO -->
-        <section class="carrinho">
-          <!-- CABEÇALHO INFORMAÇÕES DO USUÁRIO -->
-          <header class="infoResumo">
-            <div class="container">
-              <!-- INFORMAÇÕES DO USUÁRIO -->
-              <div class="infoUsuario">
-                <h3>Olá Sol do Caribe | Minha sacola</h3>
-                <p>Retirar no balcão</p>
-              </div>
-  
-              <!-- INFORMAÇÕES DE PREÇO TOTAL -->
-              <p class="infoPreco">Total: R$ 32.90</p>
+{% extends "base.html" %} {% block rodape %}
+<!-- RODAPÉ -->
+<footer class="rodape">
+  <!-- SEÇÃO CARRINHO -->
+  <section class="carrinho">
+    <!-- CABEÇALHO INFORMAÇÕES DO USUÁRIO -->
+    <header class="infoResumo">
+      <div class="container">
+        <!-- INFORMAÇÕES DO USUÁRIO -->
+        <div class="infoUsuario">
+          <h3>Olá Sol do Caribe | Minha sacola</h3>
+          <p>Retirar no balcão</p>
+        </div>
+
+        <!-- INFORMAÇÕES DE PREÇO TOTAL -->
+        <p class="infoPreco">Total: R$ 32.90</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- LISTA/RESUMO DE PRODUTOS -->
+      <div class="resumoPedido">
+        <ul class="listaProdutos">
+          <li class="cardProduto">
+            <!--  NOME/FOTO PRODUTO  -->
+            <div class="infoNome">
+              <img src="./statics/assets/Parafina Ativadora coco e Cenoura.jpg" alt="Parafina Ativadora coco e Cenoura"/>
+              <p>Parafina Ativadora coco e Cenoura</p>
             </div>
-          </header>
-  
-          <div class="container">
-            <!-- LISTA/RESUMO DE PRODUTOS -->
-            <div class="resumoPedido">
-              <ul class="listaProdutos">
-                <li class="cardProduto">
-                  <!--  NOME/FOTO PRODUTO  -->
-                  <div class="infoNome">
-                    <img
-                      src="./src/assets/Parafina Ativadora coco e Cenoura.jpg"
-                      alt="Parafina Ativadora coco e Cenoura"
-                    />
-                    <p>Parafina Ativadora coco e Cenoura</p>
-                  </div>
-  
-                  <!-- PREÇO PRODUTO -->
-                  <div class="infoPreco">
-                    <p>R$95,00</p>
-                    <button>
-                      <img
-                        src="./src/assets/lixo.png"
-                        alt="Lixo para remover produto"
-                      />
-                    </button>
-                  </div>
-                </li>
-              </ul>
+
+            <!-- PREÇO PRODUTO -->
+            <div class="infoPreco">
+              <p>R$95,00</p>
+              <button>
+                <img src="sta" alt="Lixo para remover produto" />
+              </button>
             </div>
-  
-            <!-- BOTẼOS PARA FINALZIAR/CANCELAR O PEDIDO -->
-            <div class="btnFinalizaPedido">
-              <button type="button">Finalizar Pedido</button>
-              <button type="button">Cancelar Pedido</button>
-            </div>
-          </div>
-        </section>
-      </footer>     
+          </li>
+        </ul>
+      </div>
+
+      <!-- BOTẼOS PARA FINALZIAR/CANCELAR O PEDIDO -->
+      <div class="btnFinalizaPedido">
+        <button type="button">Finalizar Pedido</button>
+        <button type="button">Cancelar Pedido</button>
+      </div>
+    </div>
+  </section>
+</footer>
+
+{% endblock %}
