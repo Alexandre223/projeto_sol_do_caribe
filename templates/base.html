@@ -10,32 +10,130 @@
     <!-- IMPORTANTO CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"
-      rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"
     />
-    <link rel="stylesheet" href="/projeto_sol_do_caribe/css/style.css" />
-    <link rel="stylesheet" href="/projeto_sol_do_caribe/css/reset.css" />
-    <link rel="stylesheet" href="/projeto_sol_do_caribe/css/agendamento.css" />
-    <link rel="stylesheet" href="/projeto_sol_do_caribe/css/style1.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/agendamento.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}" />
     <title>Sol do caribe</title>
   </head>
 
   <body>
-    {% include 'agendamento.html' %}
     
-    {% include 'cabecalho.html' %}
+    <header class="cabecalho">
+      <section>
+        <div class="cabecalho_logo">
+          <img src="{% static 'img/Banner.jpg' %}" alt="logo Sol do Caribe" />
+          <img src="{% static 'img/Nome do banner.png' %}" alt="nome da logo" />
+        </div>
+      </section>
 
-    {% include 'contato.html' %}
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav class="cabecalho__menu">
+                      
+      <!-- LISTA DE LINKS -->
+      <ul>
+          <li>
+              <a href="#">Home</a>
+          </li>
+          <li>
+              <a href="#">produtos</a>
+          </li>
+          <li>
+              <a href="#">Contato</a>
+          </li>
+          <li>
+              <a href="#">politica de privacidade</a>
+          </li>
+          <li>
+              <a href="#">termos e servicos</a>
+          </li>
+          <li>
+              <a href="#">agendamento</a>
+          </li>
+      </ul>
+    </nav>
+    <div class="cabecalho__menuConfiguracao">
+    <ul>
+        <li>
+            <a href="#">
+                <img src="{% static 'img/pesquisa.png' %}" alt="pesquisa">
+            </a>
+        </li>
+        <li>
+            <a href="#">produtos</a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="{% static 'img/presente.png' %}" alt="presente">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="{% static 'img/notificacao.png' %}" alt="notificacao">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="{% static 'img/ProfileIMG.png' %}" alt="Profile IMG">
+            </a>
+        </li>
+    </ul>
+    </div>
+    </div>
+    </header>
 
-    {% include 'index.html' %}
-
-    {% include 'politica_de_privacidade.html' %}
-
-    {% include 'produtos.html' %}
+    {% block content %}
+    {% endblock %}
     
-    {% include'rodape.html' %}
+    <footer class="rodape">
+      <!-- SEÇÃO CARRINHO -->
+      <section class="carrinho">
+        <!-- CABEÇALHO INFORMAÇÕES DO USUÁRIO -->
+        <header class="infoResumo">
+          <div class="container">
+            <!-- INFORMAÇÕES DO USUÁRIO -->
+            <div class="infoUsuario">
+              <h3>Olá Sol do Caribe | Minha sacola</h3>
+              <p>Retirar no balcão</p>
+            </div>
 
-    {% include'termos_e_servicos.html' %}
+            <!-- INFORMAÇÕES DE PREÇO TOTAL -->
+            <p class="infoPreco">Total: R$ 32.90</p>
+          </div>
+        </header>
+
+        <div class="container">
+          <!-- LISTA/RESUMO DE PRODUTOS -->
+          <div class="resumoPedido">
+            <ul class="listaProdutos">
+              <li class="cardProduto">
+                <!--  NOME/FOTO PRODUTO  -->
+                <div class="infoNome">
+                  <img src="{% static 'img/Parafina Ativadora coco e Cenoura.jpg' %}" alt="Parafina Ativadora coco e Cenoura"/>
+                  <p>Parafina Ativadora coco e Cenoura</p>
+                </div>
+
+                <!-- PREÇO PRODUTO -->
+                <div class="infoPreco">
+                  <p>R$95,00</p>
+                  <button>
+                    <img src="{% static 'img/Lixo.png' %}" alt="Lixo para remover produto" />
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- BOTẼOS PARA FINALZIAR/CANCELAR O PEDIDO -->
+          <div class="btnFinalizaPedido">
+            <button type="button">Finalizar Pedido</button>
+            <button type="button">Cancelar Pedido</button>
+          </div>
+        </div>
+      </section>
+    </footer>
 
   </body>
 </html>

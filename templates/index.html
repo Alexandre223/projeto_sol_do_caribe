@@ -1,6 +1,8 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% load static %}
 
-{% block index %}
+
+{% block content %}
 <main>
   <!-- SEÇÃO PRODUTOS -->
   <section class="secaoProdutos">
@@ -10,7 +12,7 @@
         <!-- ITEM DE PRODUTO -->
         <li class="cardProduto">
           <img
-            src="/projeto_sol_do_caribe/img/Creme Bronzeador de Café com Açaí 950g.jpg" alt="Creme Bronzeador de Café com Açaí 950g" />
+            src="{% static 'img/Acelerador e Fixador para Bronzeamento Natuaral.jpg' %}" alt="Creme Bronzeador de Café com Açaí 950g" />
           <h3>Creme Bronzeador de Café com Açaí 950g</h3>
           <p>R$95,00</p>
           <button type="button">Adicionar</button>
@@ -18,7 +20,7 @@
 
         <!-- ITEM DE PRODUTO -->
         <li class="cardProduto">
-          <img src="/projeto_sol_do_caribe/img/Oleo para Brozeamento Positivo e Negativo.jpg" alt="Oleo para Brozeamento Positivo e Negativo" />
+          <img src="{% static 'img/Acelerador e Fixador para Bronzeamento Natuaral.jpg' %}" alt="Oleo para Brozeamento Positivo e Negativo" />
           <h3>Oleo para Brozeamento Positivo e Negativo</h3>
           <p>R$85,00</p>
           <button type="button">Adicionar</button>
@@ -26,7 +28,7 @@
 
         <!-- ITEM DE PRODUTO -->
         <li class="cardProduto">
-          <img src="/projeto_sol_do_caribe/img/Parafina de Chocolate com oleo de Argan.jpg" alt="Parafina de Chocolate com oleo de Argan" />
+          <img src="{% static 'img/Acelerador e Fixador para Bronzeamento Natuaral.jpg' %}" alt="Parafina de Chocolate com oleo de Argan" />
           <h3>Parafina de Chocolate com oleo de Argan</h3>
           <p>R$95,00</p>
           <button type="button">Adicionar</button>
@@ -34,7 +36,7 @@
 
         <!-- ITEM DE PRODUTO -->
         <li class="cardProduto">
-          <img src="/projeto_sol_do_caribe/img/Creme Bronzeador de Café com Açaí 950g.jpg" alt="Creme Bronzeador de café com Açaí 950g" />
+          <img src="{% static 'img/Acelerador e Fixador para Bronzeamento Natuaral.jpg' %}" alt="Creme Bronzeador de café com Açaí 950g" />
           <h3>Creme Bronzeador de café com Açaí 950g</h3>
           <p>R$95,00</p>
           <button type="button">Adicionar</button>
@@ -42,7 +44,7 @@
 
         <!-- ITEM DE PRODUTO -->
         <li class="cardProduto">
-          <img src="/projeto_sol_do_caribe/img/Parafina Ativadora.jpg" alt="Parafina Ativadora" />
+          <img src="{% static 'img/Acelerador e Fixador para Bronzeamento Natuaral.jpg' %}" alt="Parafina Ativadora" />
           <h3>Parafina Ativadora</h3>
           <p>R$95,00</p>
           <button type="button">Adicionar</button>
@@ -50,7 +52,7 @@
 
         <!-- ITEM DE PRODUTO -->
         <li class="cardProduto">
-          <img src="/projeto_sol_do_caribe/img/Acelerador de Brozeamento Natural Bronze para Peles Claras.jpg" alt="Acelerador de Brozeamento Natural Bronze" />
+          <img src="{% static 'img/Acelerador e Fixador para Bronzeamento Natuaral.jpg' %}" alt="Acelerador de Brozeamento Natural Bronze" />
           <h3>Acelerador de Brozeamento Natural Bronze</h3>
           <p>R$95,00</p>
           <button type="button">Adicionar</button>
@@ -58,7 +60,7 @@
 
         <!-- ITEM DE PRODUTO -->
         <li class="cardProduto">
-          <img src="/projeto_sol_do_caribe/img/Parafina Ativadora coco e Cenoura.jpg" alt="Parafina Ativadora Coco e Cenoura" />
+          <img src="{% static 'img/Acelerador e Fixador para Bronzeamento Natuaral.jpg' %}" alt="Parafina Ativadora Coco e Cenoura" />
           <h3>Parafina Ativadora Coco e Cenoura</h3>
           <p>R$95,00</p>
           <button type="button">Adicionar</button>
@@ -66,7 +68,7 @@
 
         <!-- ITEM DE PRODUTO -->
         <li class="cardProduto">
-          <img src="/projeto_sol_do_caribe/img/Acelerador de Brozeamento Natural Bronze para Peles Claras.jpg" alt="Acelerador de Brozeamento Natural Bronze para Peles Claras" />
+          <img src="{% static 'img/Acelerador e Fixador para Bronzeamento Natuaral.jpg' %}" alt="Acelerador de Brozeamento Natural Bronze para Peles Claras" />
           <h3>Acelerador de Brozeamento Natural Bronze para Peles Claras</h3>
           <p>R$95,00</p>
           <button type="button">Adicionar</button>
@@ -74,7 +76,7 @@
 
         <!-- ITEM DE PRODUTO -->
         <li class="cardProduto">
-          <img src="/projeto_sol_do_caribe/img/Acelerador e Fixador para Bronzeamento Natuaral.jpg" alt="Acelerador e Fixador para Bronzeamento Natuaral" />
+          <img src="{% static 'img/Acelerador e Fixador para Bronzeamento Natuaral.jpg' %}" alt="Acelerador e Fixador para Bronzeamento Natuaral" />
           <h3>Acelerador e Fixador para Bronzeamento Natuaral</h3>
           <p>R$180,00</p>
           <button type="button">Adicionar</button>
@@ -82,7 +84,7 @@
 
         <!-- ITEM DE PRODUTO -->
         <li class="cardProduto">
-          <img src="/projeto_sol_do_caribe/img/Loção Auto Bronzeadora Vip Brozeamento a Vapor.png" alt="Loção Auto Bronzeadora Vip Brozeamento a Vapor" />
+          <img src="{% static 'img/Loção Auto Bronzeadora Vip Brozeamento a Vapor.jpg' %}" alt="Loção Auto Bronzeadora Vip Brozeamento a Vapor" />
           <h3>Loção Auto Bronzeadora Vip Brozeamento a Vapor</h3>
           <p>R$549,00</p>
           <button type="button">Adicionar</button>
