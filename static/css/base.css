@@ -1,3 +1,9 @@
+.cabecalho__menu {
+    background-color:#502314;
+    display: flex;
+}
+
+
 body{
     background-color:#F5F3F0;
     font-family: 'Nunito', sans-serif;
