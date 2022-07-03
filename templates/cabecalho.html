@@ -1,10 +1,11 @@
-{% extends "base.html" %}
+{% extends "base.html"%}
 
-{% block cabecalho %}
+{% block content %}
+
 <!-- MENU DE NAVEGAÇÃO -->
 <nav class="cabecalho__menu">
                       
-    <!-- LISTA DE LINKS -->
+    <!-- LISTA  MENU -->
     <ul>
         <li>
             <a href="#">Home</a>
@@ -26,6 +27,8 @@
         </li>
     </ul>
   </nav>
+
+  <!-- MENU CONFIGURAçÂO -->
   <div class="cabecalho__menuConfiguracao">
   <ul>
       <li>
@@ -34,7 +37,7 @@
           </a>
       </li>
       <li>
-          <a href="#">produtos</a>
+          <a href="produtos.html">produtos</a>
       </li>
       <li>
           <a href="#">
@@ -55,4 +58,5 @@
   </div>
   </div>
   </header>
+
   {% endblock %}
