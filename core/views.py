@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+
+def agendamento(request):
+ return HttpResponse(request, 'agendamento.html')
 
 def agendamento(request):
  return render(request, 'agendamento.html')
