@@ -1,16 +1,17 @@
-{% extends "base.html"%}
+{% load static %}
 
-{% block content %}
+
 <main>
 <!-- SEÇÃO PRODUTOS -->
 <section class="secaoProdutos">
     <div class="container">
       <!-- LISTA DE PRODUTOS -->
       <ul class="produtosLista">
-
-        <h1>produtos</h1>
+        <!-- ITEM DE PRODUTO -->
+        
         <li class="cardProduto">
-          <img src="{% static 'img/Creme Bronzeador de Café com Açaí 950g.jpg' %}" alt="Creme Bronzeador de Café com Açaí 950g" />
+          <img
+            src="{% static 'img/Creme Bronzeador de Café com Açaí 950g.jpg' %}" alt="Creme Bronzeador de Café com Açaí 950g" />
           <h3>Creme Bronzeador de Café com Açaí 950g</h3>
           <p>R$95,00</p>
           <button type="button">Adicionar</button>
@@ -91,5 +92,3 @@
     </div>
   </section>
 </main>
-
-{% endblock %}
