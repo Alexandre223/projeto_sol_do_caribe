@@ -16,11 +16,23 @@
     <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
     <link rel="stylesheet" href="{% static 'css/agendamento.css' %}" />
     
-    <title>Sol do caribe</title>
-  <body>
-    
+    <title>{% block title %} {% endblock %}</title>
+  
+      {% block estilo %}
+
+      
+      {% endblock %}
+</header>
+
+<body>
+
+      {% include 'cabecalho.html' %}
+      
 {% block content %}
 {% endblock %}
 
   </body>
+  <footer>
+    {% include 'rodape.html' %}
+  </footer>
 </html>

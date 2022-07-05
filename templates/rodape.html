@@ -1,20 +1,21 @@
-{% extends "base.html"%}
+{% load static %}
 
-{% block content %}
 <footer class="rodape">
+
     <!-- SEÇÃO CARRINHO -->
     <section class="carrinho">
+
       <!-- CABEÇALHO INFORMAÇÕES DO USUÁRIO -->
       <header class="infoResumo">
         <div class="container">
+
           <!-- INFORMAÇÕES DO USUÁRIO -->
           <div class="infoUsuario">
-            <h3>Olá Sol do Caribe | Minha sacola</h3>
-            <p>Retirar no balcão</p>
+            <h3>Olá Cliente "fulano" | Minhas compras</h3>
           </div>
 
           <!-- INFORMAÇÕES DE PREÇO TOTAL -->
-          <p class="infoPreco">Total: R$ 32.90</p>
+          <p class="infoPreco">Total: R$95,00</p>
         </div>
       </header>
 
@@ -48,5 +49,3 @@
       </div>
     </section>
   </footer>
-
-  {% endblock %}

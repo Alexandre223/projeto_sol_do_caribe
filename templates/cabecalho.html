@@ -1,16 +1,12 @@
-{% extends "base.html"%}
+{% load static %}
 
-{% block content %}
-<header class="cabecalho">
+<section class="cabecalho">
     <section>
       <div class="cabecalho_logo">
-        <img src="{% static 'img/Banner.jpg' %}" alt="logo Sol do Caribe" />
+        <img src="{% static 'img/Banner.png' %}" alt="logo Sol do Caribe" />
         <img src="{% static 'img/Nome do banner.png' %}" alt="nome da logo" />
       </div>
     </section>
-
-</header>
-
 <!-- MENU DE NAVEGAÇÃO -->
 <nav class="cabecalho__menu">
                       
@@ -20,19 +16,19 @@
             <a href="#">Home</a>
         </li>
         <li>
-            <a href="#">produtos</a>
+            <a href="produtos.html">produtos</a>
         </li>
         <li>
-            <a href="#">Contato</a>
+            <a href="contato.html">Contato</a>
         </li>
         <li>
-            <a href="#">politica de privacidade</a>
+            <a href="politica_de_privacidade.html">politica de privacidade</a>
         </li>
         <li>
-            <a href="#">termos e servicos</a>
+            <a href="termos_e_servicos.html">termos e servicos</a>
         </li>
         <li>
-            <a href="#">agendamento</a>
+            <a href="agendamento.html">agendamento</a>
         </li>
     </ul>
   </nav>
@@ -68,4 +64,3 @@
   </div>
   </header>
 
-  {% endblock %}
