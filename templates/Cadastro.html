@@ -1,29 +1,33 @@
+{% load static %}
 
-<title>Faça o seu Cadastro</title>
+<link rel="stylesheet" href="{% static 'css/cadastro.css' %}" />
+<body>
+    <main id="container_principal">
+        <img src="{% static 'img/Nome do banner.png' %}" alt="Nome do banner">
 
-    <section>
-            <div>
-                <!--Formulário de Login-->
-                <form>
+        <section id="section_opcoes">
+            <div class="col-md-10 mx-auto col-lg-5">
+              <div id="container_titulo">
+                
+
+              <p>Faça seu Cadastro</p>
+
+            </div>
+            <!--Formulário de Login-->
+                <form class="p-4 p-md-5 border rounded-3 bg-light">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Digite seu Usuário">
+                    <label for="floatingText">Usuário</label>
+                  </div>
                   
                   <div>
-                    <input type="text" id="floatingInput" placeholder="name">
-                    <label for="floatingText">Nome Completo</label>
-                  </div>
-
-                  <div>
-                    <input type="email" id="floatingEmail" placeholder="name@example.com">
-                    <label for="floatingEmail">Endereço de e-mail</label>
+                    <input type="password" id="Password" placeholder="Digite aqui a sua Senha">
+                    <label for="Password">Senha</label>
                   </div>
                   
                   <div>
-                    <input type="password" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Senha</label>
-                  </div>
-                  
-                  <div>
-                    <input type="password" id="Password" placeholder="Password">
-                    <label for="floatingPassword">Confirmar Senha</label>
+                    <input type="password" id="Password" placeholder="Confirme aqui a sua Senha">
+                    <label for="Password">Confirmar Senha</label>
                   </div>
                   
                   <div>
@@ -31,7 +35,8 @@
                       <input type="checkbox" value="">Lembre-se</label>
                   </div>
                   
-                  <button type="submit"><a href="index.html">Inscreva-se</a></button>
+                  <button type="submit"><a href="login.html">Inscreva-se</a></button>
                 </form>
               </div>
         </section>
+        </body>
