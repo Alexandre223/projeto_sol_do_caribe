@@ -1,0 +1,45 @@
+body{
+    background-color: #F5F3F0;
+}
+
+.container{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding:20px;
+}
+
+/* APLICANDO ESTILO NO CABEÇALHO */
+.cabecalho .container{
+    display: flex;
+    
+
+}
+
+.cabecalho_logo img {
+    max-width: 250px;
+}
+
+/* ESTILOS GERAIS*/
+
+/* ESTILO DO CABEÇALHO*/
+.cabecalho{
+    background-color: #F5F3F0;
+    padding: 16px 0;
+}
+
+.cabecalho .cabecalho__logo{
+    text-align: center;
+    color: #000;
+}
+.cabecalho__menu ul li{ 
+    display: inline;
+    text-decoration: underline;
+    color: #E5E5E5;
+    padding: 0 70px;
+    overflow-x: hidden;
+    margin-top: 30px;
+}
+
+.cabecalho__menu ul li a{
+    
+}

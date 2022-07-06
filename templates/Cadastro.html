@@ -1,40 +1,43 @@
 {% load static %}
 
-<div class="container">
-  <img src="./src/assets/Nome do banner.png" alt="Sol do caribe Logo">
-</div>
+<link rel="stylesheet" href="{% static 'css/cadastro.css' %}" />
 
-    <section>
-            <div>
-                <!--Formulário de Cadastro-->
-                <form>
-                  
-                  <div>
-                    <input type="text" id="Input" placeholder="Digite aqui o seu Nome">
-                    <label for="Input">Nome Completo</label>
-                  </div>
+<body>
+  <main id="container_principal">
+    <img src="{% static 'img/Nome do banner.png' %}" alt="Nome do banner">
 
-                  <div>
-                    <input type="email" id="Email" placeholder="Digite aqui o seu E-mail">
-                    <label for="Email">Endereço de e-mail</label>
+        <div id="container_titulo">
+        </div>
+        <section id="section_opcoes_cad">
+            <div class="col-md-10 mx-auto col-lg-5">
+                <!--Formulário de Login-->
+                <p>Faça o seu Cadastro</p>
+                <form class="p-4 p-md-5 border rounded-3 bg-light">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Digite seu Usuário">
+                    <label for="floatingText">Usuário</label>
                   </div>
-                  
-                  <div>
-                    <input type="password" id="Password" placeholder="Digite aqui a sua Senha">
-                    <label for="Password">Senha</label>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="Digite seu e-mail">
+                    <label for="floatingEmail">E-mail</label>
                   </div>
-                  
-                  <div>
-                    <input type="password" id="Password" placeholder="Confirme aqui a sua Senha">
-                    <label for="Password">Confirmar Senha</label>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                    <label for="floatingPassword">Senha</label>
                   </div>
-                  
-                  <div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Confirme Senha">
+                    <label for="floatingPassword">Confirme Senha</label>
+                  </div>
+                  <div class="checkbox mb-3">
                     <label>
-                      <input type="checkbox" value="">Lembre-se</label>
+                      <input type="checkbox" value="remember-me">Lembre-se
+                    </label>
                   </div>
-                  
-                  <button type="submit"><a href="login.html">Inscreva-se</a></button>
+                  <button class="w-100 btn btn-lg btn-primary botao" type="submit"><a class="botao" href="{% static 'cadastro.html' %}">Inscreva-se</a></button>
+                  <hr class="my-4">
                 </form>
               </div>
         </section>
+    </main>
+  </body>
