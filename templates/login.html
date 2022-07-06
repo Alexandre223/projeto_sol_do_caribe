@@ -1,14 +1,18 @@
 {% load static %}
 
+<link rel="stylesheet" href="{% static 'css/login.css' %}" />
+<body>
+  <main id="container_principal">
+      <img src="{% static 'img/Nome do banner.png' %}" alt="Nome do banner">
 
-<<<<<<< HEAD
-        <section id="section_opcoes">
-            <div class="col-md-10 mx-auto col-lg-5">
-              <div id="container_titulo">
-                
-                <p>Faça o seu login</p>
+      <section id="section_opcoes">
+          <div class="col-md-10 mx-auto col-lg-5">
+            <div id="container_titulo">
+              
 
-            </div>
+            <p>Faça o seu Login</p>
+
+          </div>
                 <!--Formulário de Login-->
                 <form class="p-4 p-md-5 border rounded-3 bg-light">
                   <div class="form-floating mb-3">
@@ -29,40 +33,5 @@
                   <small class="text-muted">Não possui uma conta? <a href="{% static 'templates/cadastro.html' %}">Cadastre-se</a></small>
                 </form>
               </div>
-        </section>
-    </main>
-</body>
-=======
-{% block content %}
-<!--Login-->
-<section>
-
-  <div class="container">
-    <img src="{% static 'img/Nome do banner.png' %}" alt="Sol do caribe Logo">
-  </div>
-
-  <div>
-
-    <!--Formulário de Login-->
-    <form>
-      <div>
-        <input type="email" name="" id="" placeholder="Digite aqui o seu Usuario" />
-        <label for="">Nome do Usuario</label>
-      </div>
-      <div>
-        <input type="password" name="" id="" placeholder="Digite aqui a sua Senha" />
-        <label for="">Senha</label>
-      </div>
-      <div>
-        <label>
-          <input type="checkbox" value="remembre-se" />Lembre-se</label>
-      </div>
-      <button type="submit"><a href="base.html">Entrar</a>
-      </button>
-      <small>Não possui uma conta? <a href="Cadastro.html">Cadastre-se</a></small>
-    </form>
-  </div>
-</section>
-
-{% endblock %}
->>>>>>> parent of f69e88a (arrumei login,cadastro e etc...)
+            </section>
+          </body>

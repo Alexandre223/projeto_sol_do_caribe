@@ -1,11 +1,12 @@
+
 from django.shortcuts import render
 from django.http import HttpResponse
 
 def agendamento(request):
- return HttpResponse(request, 'agendamento.html')
-
-def agendamento(request):
  return render(request, 'agendamento.html')
+
+def cadastro(request):
+ return render(request, 'cadastro.html')
 
 def base(request):
  return render(request, 'base.html')
@@ -24,6 +25,9 @@ def politica_de_privacidade(request):
 
 def rodape(request):
  return render(request, 'rodape.html')
+
+def login(request):
+ return render(request, 'login.html')
 
 def termos_e_servicos(request):
  return render(request, 'termos_e_servicos.html')

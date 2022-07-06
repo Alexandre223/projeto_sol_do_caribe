@@ -1,22 +1,44 @@
 body{
-    background-color: #F5F3F0;
+    font-family: 'Roboto', sans-serif;
 }
 
-.container{
-    max-width: 1330px;
-    margin: 0 auto;
-    padding:20px;
+.cabecalho{
+    background-color: #202020;
 }
 
-/* APLICANDO ESTILO NO CABEÇALHO */
-.cabecalho .container{
+.cabecalho > section{
     display: flex;
-    
-
+    justify-content: center;
 }
 
-.cabecalho_logo img {
-    max-width: 250px;
+.cabecalho_logo img{
+    height: 300px;
+    padding: 20px 30px;
+}
+
+#pesquisa{
+    width: 30px;
+    height: 30px;
+    padding: 20px 30px;
+    border-bottom: solid 1px #E5E5E5;
+    border-left: solid 1px #E5E5E5;
+}
+
+.cabecalho_menu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px 0;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ESTILOS GERAIS*/
