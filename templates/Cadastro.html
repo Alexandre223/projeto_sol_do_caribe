@@ -1,17 +1,19 @@
 {% load static %}
 
-<link rel="stylesheet" href="{% static 'css/cadastro.css' %}" />
-
+<link rel="stylesheet" href="{% static 'css/login.css' %}" />
 <body>
-  <main id="container_principal">
-    <img src="{% static 'img/Nome do banner.png' %}" alt="Nome do banner">
+    <main id="container_principal">
+        <img src="{% static 'img/Nome do banner.png' %}" alt="Nome do banner">
 
-        <div id="container_titulo">
-        </div>
-        <section id="section_opcoes_cad">
+        <section id="section_opcoes">
             <div class="col-md-10 mx-auto col-lg-5">
-                <!--Formulário de Login-->
-                <p>Faça o seu Cadastro</p>
+              <div id="container_titulo">
+                
+
+              <p>Faça o seu Cadastro</p>
+
+            </div>
+            <!--Formulário de Login-->
                 <form class="p-4 p-md-5 border rounded-3 bg-light">
                   <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="floatingInput" placeholder="Digite seu Usuário">

@@ -40,6 +40,9 @@ body{
     margin-top: 30px;
 }
 
-.cabecalho__menu ul li a{
-    
+.cabecalho .cabecalho__menuConfiguracao li {
+    display: inline-block;
+}
+.cabecalho .cabecalho__menuConfiguracao a {
+    color: black;
 }

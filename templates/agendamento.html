@@ -1,101 +1,104 @@
+{% block estilo %}
 
-<section>
+      {% endblock %}
+<body>
+  <div>
+    <h1>Agendanento</h1>
+    <form>
+      <div>
+
+      </div>
+  </div>
+
+  <div>
+    <label for="Name">Nome Completo</label>
+    <input type="text" id="Name" placeholder="" value="" required>
     <div>
-      <h4>Agendanento</h4>
-      <form>
-        <div>
-            
-            </div>
-          </div>
-
-          <div>
-            <label for="Name" >Nome Completo</label>
-            <input type="text"  id="Name" placeholder="" value="" required>
-            <div>
-            </div>
-          </div>
-          
-          
-          <div >
-            <label for="email" >Email</label>
-            <input type="email"  id="email" placeholder="xxxxx@gmail.com">
-            <div >
-            </div>
-          </div>
-
-          <div >
-            <label for="country" >Turno</label>
-            <select  id="country" required>
-              <option value="">Horario da Manhã</option>
-              <option>Horario da Tarde</option>
-            </select>
-            <div>
-            </div>
-          </div>
-          <div>
-            <label for="time" >Horario</label>
-            <input type="time" id="time" required>
-          </div>
-          <div>
-            <label for="date">Data</label>
-            <input type="date" id="date" required>
-          </div>
-
-        <h4>Formas de Pagamentos</h4>
-        
-        <div>
-          <div>
-            <input id="credit" name="paymentMethod" type="radio"  checked required>
-            <label for="credit">Credito</label>
-          </div>
-          <div>
-            <input id="debit" name="paymentMethod" type="radio" required>
-            <label for="debit">Debito</label>
-          </div>
-          <div>
-            <input id="paypal" name="paymentMethod" type="radio" required>
-            <label  for="paypal">Pix</label>
-          </div>
-          <div >
-            <input id="paypal" name="paymentMethod" type="radio" required>
-            <label  for="paypal"> Espécie </label>
-          </div>
-        </div>
-     <div>
-          <div>
-            <label for="cc-name" >Nome no cartão</label>
-            <input type="text" id="cc-name" placeholder="" required>
-            <div>
-    
-            </div>
-          </div>
-
-          <div >
-            <label for="cc-number" >Número do cartão de crédito</label>
-            <input type="text" id="cc-number" placeholder="0000 0000 0000 0000" required>
-            <div>
-              
-            </div>
-          </div>
-
-          <div>
-            <label for="cc-expiration">Expiração</label>
-            <input type="text" id="cc-expiration" placeholder="00/00" required>
-            <div >
-            
-            </div>
-          </div>
-
-          <div>
-            <label for="cc-cvv" >CVV</label>
-            <input type="text" id="cc-cvv" placeholder="000" required>
-            <div>
-              
-            </div>
-          </div>
-        </div>
-        <button type="submit">Agendar</button>
-      </form>
     </div>
   </div>
-</div>
+
+
+  <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="xxxxx@gmail.com">
+    <div>
+    </div>
+  </div>
+
+  <div>
+    <label for="country">Turno</label>
+    <select id="country" required>
+      <option value="">Horario da Manhã</option>
+      <option>Horario da Tarde</option>
+    </select>
+    <div>
+    </div>
+  </div>
+  <div>
+    <label for="time">Horario</label>
+    <input type="time" id="time" required>
+  </div>
+  <div>
+    <label for="date">Data</label>
+    <input type="date" id="date" required>
+  </div>
+
+  <h4>Formas de Pagamentos</h4>
+
+  <div>
+    <div>
+      <input id="credit" name="paymentMethod" type="radio" checked required>
+      <label for="credit">Credito</label>
+    </div>
+    <div>
+      <input id="debit" name="paymentMethod" type="radio" required>
+      <label for="debit">Debito</label>
+    </div>
+    <div>
+      <input id="paypal" name="paymentMethod" type="radio" required>
+      <label for="paypal">Pix</label>
+    </div>
+    <div>
+      <input id="paypal" name="paymentMethod" type="radio" required>
+      <label for="paypal"> Espécie </label>
+    </div>
+  </div>
+  <div>
+    <div>
+      <label for="cc-name">Nome no cartão</label>
+      <input type="text" id="cc-name" placeholder="" required>
+      <div>
+
+      </div>
+    </div>
+
+    <div>
+      <label for="cc-number">Número do cartão de crédito</label>
+      <input type="text" id="cc-number" placeholder="0000 0000 0000 0000" required>
+      <div>
+
+      </div>
+    </div>
+
+    <div>
+      <label for="cc-expiration">Expiração</label>
+      <input type="text" id="cc-expiration" placeholder="00/00" required>
+      <div>
+
+      </div>
+    </div>
+
+    <div>
+      <label for="cc-cvv">CVV</label>
+      <input type="text" id="cc-cvv" placeholder="000" required>
+      <div>
+
+      </div>
+    </div>
+  </div>
+  <button type="submit">Agendar</button>
+  </form>
+  </div>
+  </div>
+  </div>
+</body>

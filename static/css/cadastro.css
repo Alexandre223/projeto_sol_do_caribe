@@ -23,7 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: -12px 0;
+    margin: -50px 0;
 }
 
 #container_titulo {
@@ -46,8 +46,8 @@ body {
     border: 3px solid #DB3B1D;
     border-radius: 8px;
     margin: 15px;
-    height: 1px;
-    width: 0px;
+    height: 412px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,25 +55,25 @@ body {
 }
 
 #section_opcoes > div > img {
-    width: 30px;
-    margin-bottom: 4px;
+    width: 100px;
+    margin-bottom: 15px;
 }
 
 #section_opcoes > div > p {
     color: #DB3B1D;
     font-style: italic;
-    font-weight: 100;
-    font-size: 5px;
-    width: 30px;
+    font-weight: 200;
+    font-size: 25px;
+    width: 130px;
     text-align: center;
-    line-height: 0px;
+    line-height: 30px;
 }
 
 #section_opcoes_cad > div {
     border: 3px solid #DB3B1D;
     border-radius: 8px;
     margin: 15px;
-    height: 400px;
+    height: 640px;
     width: 350px;
     display: flex;
     flex-direction: column;

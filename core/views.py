@@ -25,9 +25,6 @@ def login(request):
 def politica_de_privacidade(request):
  return render(request, 'politica_de_privacidade')
 
-def produtos(request):
- return render(request, 'produtos.html')
-
 def rodape(request):
  return render(request, 'rodape')
 
