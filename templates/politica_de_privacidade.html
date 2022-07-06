@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -9,7 +9,7 @@
     
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/static.css' %} ">
       
 
         </head>
@@ -43,7 +43,7 @@
     A Sol do Caribe Cosmetics mantém suas informações em sigilo. <br>
     Quanto às suas informações pessoais, a Sol do Caribe Cosmetics não as cede a terceiros, sejam eles anunciantes ou parceiros, sob hipótese nenhuma. <br>
     Utilizamos seu e-mail somente para enviar produtos do site ou divulgar promoções e apenas quando tal prática tenha tido sua anuência. <br>
-    A Sol do Caribe Cosmetics jamais enviará arquivos executáveis (.exe) através de email. Caso você receba um arquivo desse tipo não abra e entre imediatamente em contato conosco <br>
+    A Sol do Caribe Cosmetics jamais enviará arquivos executáveis através do email. Caso você receba um arquivo desse tipo não abra e entre imediatamente em contato conosco <br>
 </p>
 <p>
    <strong> 3ª Compras com cartão de crédito <br> </strong>
@@ -60,7 +60,7 @@ Ao navegar por este site <strong>você aceita o uso de cookies</strong> para agi
 
 <div class="col-md-6">
     <div class="col-sm-4">
-        <img src="/projeto_sol_do_caribe/SOL.png" class="img-responsive img-circle" />
+        <img src="/projeto_sol_do_caribe/static/img/Banner.png" class="img-responsive img-circle" />
     </div>
     <div class="col-sm-8">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navegacao" >
@@ -70,6 +70,7 @@ Ao navegar por este site <strong>você aceita o uso de cookies</strong> para agi
 <br>
 <footer>
     <div class="Rodapé"><br>
+        
         <small>Desenvolvido por:</small>
     <span>Sol do Caribe © 2022</span>
     </div>
