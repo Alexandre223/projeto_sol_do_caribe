@@ -1,5 +1,6 @@
 {% load static %}
 
+<<<<<<< HEAD
 <link rel="stylesheet" href="{% static 'css/login.css' %}" />
 <body>
     <main id="container_principal">
@@ -18,28 +19,43 @@
                   <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="floatingInput" placeholder="Digite seu Usuário">
                     <label for="floatingText">Usuário</label>
+=======
+<div class="container">
+  <img src="./src/assets/Nome do banner.png" alt="Sol do caribe Logo">
+</div>
+
+    <section>
+            <div>
+                <!--Formulário de Cadastro-->
+                <form>
+                  
+                  <div>
+                    <input type="text" id="Input" placeholder="Digite aqui o seu Nome">
+                    <label for="Input">Nome Completo</label>
                   </div>
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingEmail" placeholder="Digite seu e-mail">
-                    <label for="floatingEmail">E-mail</label>
+
+                  <div>
+                    <input type="email" id="Email" placeholder="Digite aqui o seu E-mail">
+                    <label for="Email">Endereço de e-mail</label>
+>>>>>>> parent of f69e88a (arrumei login,cadastro e etc...)
                   </div>
-                  <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
-                    <label for="floatingPassword">Senha</label>
+                  
+                  <div>
+                    <input type="password" id="Password" placeholder="Digite aqui a sua Senha">
+                    <label for="Password">Senha</label>
                   </div>
-                  <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Confirme Senha">
-                    <label for="floatingPassword">Confirme Senha</label>
+                  
+                  <div>
+                    <input type="password" id="Password" placeholder="Confirme aqui a sua Senha">
+                    <label for="Password">Confirmar Senha</label>
                   </div>
-                  <div class="checkbox mb-3">
+                  
+                  <div>
                     <label>
-                      <input type="checkbox" value="remember-me">Lembre-se
-                    </label>
+                      <input type="checkbox" value="">Lembre-se</label>
                   </div>
-                  <button class="w-100 btn btn-lg btn-primary botao" type="submit"><a class="botao" href="{% static 'cadastro.html' %}">Inscreva-se</a></button>
-                  <hr class="my-4">
+                  
+                  <button type="submit"><a href="login.html">Inscreva-se</a></button>
                 </form>
               </div>
         </section>
-    </main>
-  </body>

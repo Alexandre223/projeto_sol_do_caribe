@@ -1,11 +1,10 @@
 {% load static %}
 
-<link rel="stylesheet" href="{% static 'css/cabecalho.css' %}" />
 <section class="cabecalho">
     <section>
       <div class="cabecalho_logo">
         <img src="{% static 'img/Banner.png' %}" alt="logo Sol do Caribe" />
-        <img id="2" src="{% static 'img/Nome do banner.png' %}" alt="nome da logo" />
+        <img src="{% static 'img/Nome do banner.png' %}" alt="nome da logo" />
       </div>
     </section>
 <!-- MENU DE NAVEGAÇÃO -->
@@ -33,5 +32,35 @@
         </li>
     </ul>
   </nav>
+
+  <!-- MENU CONFIGURAçÂO -->
+  <div class="cabecalho__menuConfiguracao">
+  <ul>
+      <li>
+          <a href="#">
+              <img src="{% static 'img/pesquisa.png' %}" alt="pesquisa">
+          </a>
+      </li>
+      <li>
+          <a href="produtos.html">produtos</a>
+      </li>
+      <li>
+          <a href="#">
+              <img src="{% static 'img/presente.png' %}" alt="presente">
+          </a>
+      </li>
+      <li>
+          <a href="#">
+              <img src="{% static 'img/notificacao.png' %}" alt="notificacao">
+          </a>
+      </li>
+      <li>
+          <a href="#">
+              <img src="{% static 'img/ProfileIMG.png' %}" alt="Profile IMG">
+          </a>
+      </li>
+  </ul>
+  </div>
   </div>
   </header>
+

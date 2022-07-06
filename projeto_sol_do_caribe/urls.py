@@ -15,25 +15,27 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+<<<<<<< HEAD
 from core.views import agendamento, base, cabecalho, cadastro, contato, index, login, politica_de_privacidade, rodape, termos_e_servicos
+=======
+from core.views import index, agendamento, contato, termos_e_servicos, politica_de_privacidade, produtos, rodape
+>>>>>>> parent of f69e88a (arrumei login,cadastro e etc...)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('agendamento/', agendamento),
-    path('base/', base),
-    path('cabecalho/', cabecalho),
-    path('cadastro/', cadastro),
-    path('contato/', contato),
     path('', index),
+<<<<<<< HEAD
     path('login/', login),
     path('politica_de_privacidade/', politica_de_privacidade),
     path('rodape/', rodape),
+=======
+    path('produtos/', produtos),
+    path('agendamento/', agendamento),
+    path('contato/', contato),
+>>>>>>> parent of f69e88a (arrumei login,cadastro e etc...)
     path('termos_e_servicos/', termos_e_servicos),
-    
-    
-    
-    
-    
+    path('politica_de_privacidade/', politica_de_privacidade),
+    path('rodape/', rodape),
 
 
 ]
