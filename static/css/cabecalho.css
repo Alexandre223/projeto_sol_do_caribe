@@ -1,0 +1,70 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho{
+    background-color: #202020;
+}
+
+.cabecalho > section{
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho_logo img{
+    height: 300px;
+    padding: 20px 30px;
+}
+
+#pesquisa{
+    width: 30px;
+    height: 30px;
+    padding: 20px 30px;
+    border-bottom: solid 1px #E5E5E5;
+    border-left: solid 1px #E5E5E5;
+}
+
+.cabecalho_menu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px 0;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ESTILOS GERAIS*/
+
+/* ESTILO DO CABEÇALHO*/
+.cabecalho{
+    background-color: #F5F3F0;
+    padding: 16px 0;
+}
+
+.cabecalho .cabecalho__logo{
+    text-align: center;
+    color: #000;
+}
+.cabecalho__menu ul li{ 
+    display: inline;
+    text-decoration: underline;
+    color: #E5E5E5;
+    padding: 0 70px;
+    overflow-x: hidden;
+    margin-top: 30px;
+}
+
+.cabecalho .cabecalho__menuConfiguracao li {
+    display: inline-block;
+}
+.cabecalho .cabecalho__menuConfiguracao a {
+    color: black;
+}
