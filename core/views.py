@@ -1,6 +1,7 @@
 
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Produtos
 
 def agendamento(request):
  return render(request, 'agendamento.html')
@@ -31,5 +32,13 @@ def login(request):
 
 def termos_e_servicos(request):
  return render(request, 'termos_e_servicos.html')
+
+def listar_produtos(request):
+    produto = Produtos.objects.all()
+    contexto ={
+        'todos_produtos': produto
+    }
+    return render(request, 'Produtos.html', contexto ) 
+    
 
 # Create your views here.
